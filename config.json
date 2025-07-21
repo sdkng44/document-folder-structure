@@ -1,0 +1,6 @@
+{
+    "excluded_dirs": ["node_modules", "__pycache__", ".git", "deps", ".fingerprint", "build", "incremental"],
+    "excluded_files": [".gitignore", ".849C9593-D756-4E56-8D6E-42412F2A707B"],
+    "excluded_extensions": [".log", ".tmp", ".bak", ".db-shm", ".db-wal", ".npmrc", ".prettierignore", ".prettierrc"],
+	"max_depth": 4
+}

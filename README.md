@@ -1,2 +1,118 @@
 # document_folder_structure
+<<<<<<< HEAD
 Python script to generate Markdown documentation for any project directory , creates a tree folder ASCII structure and documents the file contents with Git metadata (branch, commit, repo, etc.).  Links files with GitHub urls.
+=======
+
+**Automatic Markdown Documentation and Directory Tree Generator**
+
+This script generates structured Markdown documentation for any project directory, including:
+
+- **directory_tree.md:** Directory structure with Git metadata (branch, commit, repo, etc.)
+- **all_files_content.md:** Grouped file index and content previews (with truncation for large files, CSV/Excel previews, and special handling for binaries and logs)
+- Skips configured folders/files (see configuration)
+- Automatically adds the documentation folder to `.gitignore`
+- Supports GitHub/GitLab links to each file at current commit (if Git is configured)
+
+## Requirements
+
+- Python 3.6+
+- [openpyxl](https://pypi.org/project/openpyxl/) (for `.xlsx` preview)
+- All dependencies listed in `requirements.txt`
+
+
+Install with:
+
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+
+From the root of your project, run:
+
+```sh
+python document_folder_structure.py /path/to/your/project
+```
+
+Optional arguments:
+
+--config: Path to JSON configuration file (default: config.json)
+
+--max-depth: Maximum directory depth to display
+
+--tree-title: Custom title for the directory tree
+
+--truncate-lines: Max lines for README/large files (default: 10)
+
+--max-log-lines: Max lines to preview for .log files (default: 10)
+
+
+```sh
+python document_folder_structure.py /home/user/myproject --max-depth 3 --truncate-lines 8
+```
+
+## Output
+
+All output files are placed in `INTERNAL_DOCS/` inside your project root:
+
+- `directory_tree.md`: Directory tree with Git and file extension summary
+- `all_files_content.md`: File index and preview for all non-binary, non-excluded files
+
+If `.gitignore` exists or is created, `INTERNAL_DOCS/` is automatically added to avoid committing generated docs.
+
+
+## Configuration
+
+You can customize exclusions and tree depth in a JSON config file.
+
+**Example `config.json`:**
+
+```json
+{
+    "excluded_dirs": [
+        "node_modules", "__pycache__", ".git", "deps", ".fingerprint", "build", "incremental"
+    ],
+    "excluded_files": [
+        ".gitignore", ".849C9593-D756-4E56-8D6E-42412F2A707B"
+    ],
+    "excluded_extensions": [
+        ".log", ".tmp", ".bak", ".db-shm", ".db-wal", ".npmrc", ".prettierignore", ".prettierrc"
+    ],
+    "max_depth": 4
+}
+```
+
+
+## Features
+
+- Handles large files, binary files, and non-text files intelligently (binary omitted, logs/README truncated)
+- Markdown code highlighting by extension (`.py`, `.js`, `.md`, etc.)
+- CSV files: Markdown table preview of first 10 lines
+- Excel (`.xlsx`): Markdown table preview of first 10 lines per sheet (requires `openpyxl`)
+- Customizable file/folder exclusions
+- Adds the documentation folder to `.gitignore` automatically
+
+
+
+## Limitations
+
+- `.xls` (old Excel format) preview is not supported—use `.xlsx` instead.
+- For correct GitHub/GitLab links, your repo must have a remote named `origin`.
+
+
+## Example Output
+
+After running, see files in `INTERNAL_DOCS/` like:
+
+- `directory_tree.md`
+- `all_files_content.md`
+
+
+## License
+
+Apache License 2.0
+
+---
+
+Created by sdkng44@gmail.com
+>>>>>>> 795b585 (First commit python script documentation generator)
