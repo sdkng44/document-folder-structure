@@ -1,7 +1,5 @@
 # document_folder_structure
-=======
-
-**Automatic Markdown Documentation and Directory Tree Generator**
+## **Automatic Markdown Documentation and Directory Tree Generator**
 
 This script generates structured Markdown documentation for any project directory, including:
 
