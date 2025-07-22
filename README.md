@@ -46,28 +46,28 @@ The documentation files will be created inside the INTERNAL_DOCS/ folder within 
 
 **Optional arguments:**
 
---config	Path to JSON configuration file (default: config.json)
+`--config`	Path to JSON configuration file (default: config.json)
 
---max-depth	Maximum directory depth to display (default: 4)
+`--max-depth`	Maximum directory depth to display (default: 4)
 
---tree-title	Custom title for the directory tree Markdown
+`--tree-title`	Custom title for the directory tree Markdown
 
---truncate-lines	Max lines for README/large files (default: 10)
+`--truncate-lines`	Max lines for README/large files (default: 10)
 
---truncate-chars	Max characters for file previews (default: 2000)
+`--truncate-chars`	Max characters for file previews (default: 2000)
 
---max-log-lines	Max lines to preview for .log files (default: 10)
+`--max-log-lines`	Max lines to preview for .log files (default: 10)
 
---max-preview-columns	Max columns to preview in CSV/Excel tables (default: 20)
+`--max-preview-columns`	Max columns to preview in CSV/Excel tables (default: 20)
 
---no-lines	Turn off line numeration on Markdown file content preview (default show line numeration)
+`--no-lines`	Turn off line numeration on Markdown file content preview (default show line numeration)
 
 
 ```sh
 python document_folder_structure.py C:\home\user\myproject --max-depth 3 --truncate-lines 8 --max-preview-columns 15 --no-lines
 ```
 
-When using --no-lines, line numbers will not be shown in the file previews (except for CSV/Excel tables).
+When using `--no-lines`, line numbers will not be shown in the file previews (except for CSV/Excel tables).
 Section headers, line totals, and file separation are always included to keep the documentation clear.
 
 
