@@ -13,13 +13,11 @@ This script generates structured Markdown documentation for any project director
 ## Documentation Example
 
 - [Markdown example of directory_tree.md](/DOCUMENTATION_EXAMPLES/directory_tree.md)
-- [PDF example of directory_tree.md](/DOCUMENTATION_EXAMPLES/directory_tree.pdf)
-- ![Preview](/DOCUMENTATION_EXAMPLES/directory_tree.png)
+![Preview][Image Example](/DOCUMENTATION_EXAMPLES/directory_tree.png)
 
 
 - [Markdown example of all_files_content.md](/DOCUMENTATION_EXAMPLES/all_files_content.md)
-- [PDF example of all_files_content.md](/DOCUMENTATION_EXAMPLES/all_files_content.pdf)
-- ![Preview](/DOCUMENTATION_EXAMPLES/all_files_content.png)
+![Preview][Image Example](/DOCUMENTATION_EXAMPLES/all_files_content.png)
 
 
 ## Requirements
