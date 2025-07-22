@@ -84,7 +84,8 @@ If .gitignore does not exist, it is created. The folder INTERNAL_DOCS/ is always
 
 ## Configuration
 
-You can customize exclusions, tree depth and truncate file content on Markdown documentation in a JSON config file.
+You can customize exclusions, tree directory depth and truncate file content on Markdown documentation in a JSON config file.
+First 4 lines are for files, extensions and directories exclusion before the tree generation, 5-12 lines are for truncate file content on Markdown documentation.
 
 **Example `config.json`:**
 
