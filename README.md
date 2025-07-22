@@ -9,6 +9,16 @@ This script generates structured Markdown documentation for any project director
 - Automatically adds the documentation folder to `.gitignore`
 - Supports GitHub/GitLab links to each file at current commit (if Git is configured)
 
+
+## Documentation Example
+
+- [Example of directory_tree.md] (/DOCUMENTATION_EXAMPLES/directory_tree.md)
+- [Example of all_files_content.md] (/DOCUMENTATION_EXAMPLES/all_files_content.md)
+- [Example of directory_tree.md] (/DOCUMENTATION_EXAMPLES/directory_tree.pdf)
+- [Example of all_files_content.md] (/DOCUMENTATION_EXAMPLES/all_files_content.pdf)
+- [Example of directory_tree.md] (/DOCUMENTATION_EXAMPLES/directory_tree.html)
+- [Example of all_files_content.md] (/DOCUMENTATION_EXAMPLES/all_files_content.html)
+
 ## Requirements
 
 - Python 3.6+
