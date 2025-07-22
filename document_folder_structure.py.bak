@@ -701,9 +701,9 @@ def generate_content_document(
                 out_lines.append("```\n")
             except Exception as e:
                 logging.warning(f"Could not read {abs_path}: {e}")
-                out_lines.append(f"(Could not read file: {e})\n")        
+                out_lines.append(f"(Could not read file: {e})\n")
         if not out_lines[-1].endswith('\n'):
-            out_lines.append('\n')        
+            out_lines.append('\n')
         out_lines.append("---\n")
     with open(output_file, 'w', encoding='utf-8') as out:
         out.write("".join(out_lines))
