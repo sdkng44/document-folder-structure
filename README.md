@@ -34,16 +34,24 @@ python document_folder_structure.py C:\path\to\your\project
 The documentation files will be created inside the INTERNAL_DOCS/ folder within the target project directory you specified.
 
 
-Optional arguments:
+**Optional arguments:**
 
 --config	Path to JSON configuration file (default: config.json)
+
 --max-depth	Maximum directory depth to display (default: 4)
+
 --tree-title	Custom title for the directory tree Markdown
+
 --truncate-lines	Max lines for README/large files (default: 10)
+
 --truncate-chars	Max characters for file previews (default: 2000)
+
 --max-log-lines	Max lines to preview for .log files (default: 10)
+
 --max-preview-columns	Max columns to preview in CSV/Excel tables (default: 20)
+
 --no-lines	Turn off line numeration on Markdown file content preview (default show line numeration)
+
 
 ```sh
 python document_folder_structure.py C:\home\user\myproject --max-depth 3 --truncate-lines 8 --max-preview-columns 15 --no-lines
