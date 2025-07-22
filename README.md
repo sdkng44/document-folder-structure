@@ -1,6 +1,6 @@
 # **Automatic Markdown Documentation and Directory Tree Generator**
 
-This script generates 2 files (**directory_tree.md:** and **all_files_content.md:**) of structured Markdown documentation for any project directory:
+This script generates 2 files (**directory_tree.md** and **all_files_content.md**) of structured Markdown documentation for any project directory:
 
 - **directory_tree.md:** Directory structure with Git metadata (branch, commit, repo, etc.)
 - **all_files_content.md:** Grouped file index and content previews (with truncation for large files, CSV/Excel previews, and special handling for binaries and logs)
