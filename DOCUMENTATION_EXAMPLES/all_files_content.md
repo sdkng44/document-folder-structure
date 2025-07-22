@@ -1,18 +1,65 @@
 # Project File Contents
 
-_Generated: 2025-07-22 01:05:29_
+_Generated: 2025-07-22 02:16:03_
 
 **Existing branches:** main  
 **Current branch:** `main`  
-**Commit:** `2caf255`   
+**Commit:** `fc62e41`   
 **Repo:** https://github.com/sdkng44/document_folder_structure  
 **Status:** ✔️ synced 
 ## Index
-- **docs/**        - [document_folder_structure.html](#docsdocument_folder_structurehtml) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/docs/document_folder_structure.html)        - [index.html](#docsindexhtml) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/docs/index.html)        - [search.js](#docssearchjs) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/docs/search.js)    - [LICENSE](#LICENSE) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/LICENSE)    - [README.md](#READMEmd) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/README.md)    - [config.json](#configjson) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/config.json)    - [document_folder_structure.py](#document_folder_structurepy) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/document_folder_structure.py)    - [requirements.txt](#requirementstxt) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/2caf255/requirements.txt)
+- **DOCUMENTATION_EXAMPLES/**        - [all_files_content.md](#DOCUMENTATION_EXAMPLESall_files_contentmd) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/DOCUMENTATION_EXAMPLES/all_files_content.md)        - [all_files_content.pdf](#DOCUMENTATION_EXAMPLESall_files_contentpdf) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/DOCUMENTATION_EXAMPLES/all_files_content.pdf)        - [all_files_content.png](#DOCUMENTATION_EXAMPLESall_files_contentpng) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/DOCUMENTATION_EXAMPLES/all_files_content.png)        - [directory_tree.md](#DOCUMENTATION_EXAMPLESdirectory_treemd) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/DOCUMENTATION_EXAMPLES/directory_tree.md)        - [directory_tree.pdf](#DOCUMENTATION_EXAMPLESdirectory_treepdf) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/DOCUMENTATION_EXAMPLES/directory_tree.pdf)        - [directory_tree.png](#DOCUMENTATION_EXAMPLESdirectory_treepng) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/DOCUMENTATION_EXAMPLES/directory_tree.png)- **docs/**        - [document_folder_structure.html](#docsdocument_folder_structurehtml) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/docs/document_folder_structure.html)        - [index.html](#docsindexhtml) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/docs/index.html)        - [search.js](#docssearchjs) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/docs/search.js)    - [LICENSE](#LICENSE) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/LICENSE)    - [README.md](#READMEmd) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/README.md)    - [config.json](#configjson) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/config.json)    - [document_folder_structure.py](#document_folder_structurepy) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/document_folder_structure.py)    - [requirements.txt](#requirementstxt) | [GitHub](https://github.com/sdkng44/document_folder_structure/blob/fc62e41/requirements.txt)
+---
+## DOCUMENTATION_EXAMPLES\all_files_content.md
+<a name="DOCUMENTATION_EXAMPLESall_files_contentmd"></a>
+_(Total lines: 867)_
+_(Showing up to 10 lines, max 2000 characters)_
+```markdown
+1 | # Project File Contents
+2 | 
+3 | _Generated: 2025-07-22 01:05:29_
+4 | 
+5 | **Existing branches:** main
+6 | **Current branch:** `main`
+7 | **Commit:** `2caf255`
+8 | **Repo:** https://github.com/sdkng44/document_folder_structure
+9 | **Status:** ✔️ synced
+10 | ## Index
+```
+---
+## DOCUMENTATION_EXAMPLES\all_files_content.pdf
+<a name="DOCUMENTATION_EXAMPLESall_files_contentpdf"></a>
+_(Binary file omitted)_
+```
+```
+---
+## DOCUMENTATION_EXAMPLES\all_files_content.png
+<a name="DOCUMENTATION_EXAMPLESall_files_contentpng"></a>
+_(Binary file omitted)_
+```
+```
+---
+## DOCUMENTATION_EXAMPLES\directory_tree.md
+<a name="DOCUMENTATION_EXAMPLESdirectory_treemd"></a>
+_(Binary file omitted)_
+```markdown
+```
+---
+## DOCUMENTATION_EXAMPLES\directory_tree.pdf
+<a name="DOCUMENTATION_EXAMPLESdirectory_treepdf"></a>
+_(Binary file omitted)_
+```
+```
+---
+## DOCUMENTATION_EXAMPLES\directory_tree.png
+<a name="DOCUMENTATION_EXAMPLESdirectory_treepng"></a>
+_(Binary file omitted)_
+```
+```
 ---
 ## docs\document_folder_structure.html
 <a name="docsdocument_folder_structurehtml"></a>
-_(Total lines: 2023)_
+_(Total lines: 2035)_
 _(Showing up to 10 lines, max 2000 characters)_
 ```html
 1 | <!doctype html>
@@ -68,7 +115,7 @@ _(Showing up to 10 lines, max 2000 characters)_
 ---
 ## README.md
 <a name="READMEmd"></a>
-_(Total lines: 126)_
+_(Total lines: 145)_
 _(Showing up to 10 lines, max 2000 characters)_
 ```markdown
 1 | # document_folder_structure
