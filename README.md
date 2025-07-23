@@ -18,29 +18,49 @@ This script generates 2 files (**directory_tree.md** and **all_files_content.md*
   ![Preview](https://raw.githubusercontent.com/sdkng44/document-folder-structure/main/DOCUMENTATION_EXAMPLES/all_files_content.png)
 
 
-## Requirements
 
-- Python 3.6+
-- [openpyxl](https://pypi.org/project/openpyxl/) (for `.xlsx` preview)
-- All dependencies listed in `requirements.txt`
+## Installation
 
+### **A. Install from PyPI (recommended for most users)**
 
-Install dependencies with:
+```sh
+pip install document-folder-structure
+```
 
+### **B. Install from Source (GitHub)**
+- **1. Clone the repo:**
+```sh
+git clone https://github.com/sdkng44/document-folder-structure.git
+cd document-folder-structure
+```
+- **2. Install dependencies:**
 ```sh
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-To generate documentation, navigate to the folder where document_folder_structure.py is located.
-Run the script and provide the full path to the project you want to document as an argument:
-
+**A. As CLI (after installing from PyPI):**
+Once installed, run from any folder providing the full path to the project you want to document as an argument:
 ```sh
-python document_folder_structure.py C:\path\to\your\project
+document-folder-structure C:\path\to\myproject
+```
+or in Linux:
+```sh
+document-folder-structure /path/to/your/project
 ```
 
-The documentation files will be created inside the INTERNAL_DOCS/ folder within the target project directory you specified.
+**B. From Source (if you cloned the repo):**
+Always run from the root of the cloned repo (where the document_folder_structure/ folder is).
+```sh
+python -m document_folder_structure C:\path\to\myproject
+```
+or in Linux:
+```sh
+python -m document_folder_structure /path/to/your/project
+```
+
+The documentation files will be created inside the `INTERNAL_DOCS/` folder within the target project directory you specified.
 
 
 **Optional arguments:**
@@ -62,8 +82,9 @@ The documentation files will be created inside the INTERNAL_DOCS/ folder within 
 `--no-lines`	Turn off line numeration on Markdown file content preview (default show line numeration)
 
 
+**Example with arguments (on Windows):**
 ```sh
-python document_folder_structure.py C:\home\user\myproject --max-depth 3 --truncate-lines 8 --max-preview-columns 15 --no-lines
+document-folder-structure C:\home\user\myproject --max-depth 3 --truncate-lines 8 --max-preview-columns 15 --no-lines
 ```
 
 When using `--no-lines`, line numbers will not be shown in the file previews (except for CSV/Excel tables).
@@ -132,6 +153,13 @@ After running, you'll find the following in INTERNAL_DOCS/:
 - `all_files_content.md`
 
 Both files are readable Markdown, suitable for project documentation, onboarding, or quick file audits.
+
+
+## Requirements
+
+- Python 3.6+
+- [openpyxl](https://pypi.org/project/openpyxl/) (for `.xlsx` preview)
+- All dependencies listed in `requirements.txt`
 
 
 ## License
