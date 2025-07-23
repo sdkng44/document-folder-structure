@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-**A. As CLI (after installing from PyPI):**
+### **A. As CLI (after installing from PyPI):**
 Once installed, run from any folder providing the full path to the project you want to document as an argument:
 ```sh
 document-folder-structure C:\path\to\myproject
@@ -50,7 +50,7 @@ or in Linux:
 document-folder-structure /path/to/your/project
 ```
 
-**B. From Source (if you cloned the repo):**
+### **B. From Source (if you cloned the repo):**
 Always run from the root of the cloned repo (where the document_folder_structure/ folder is).
 ```sh
 python -m document_folder_structure C:\path\to\myproject
@@ -98,7 +98,7 @@ All output files are placed in `INTERNAL_DOCS/` inside your project root:
 - `directory_tree.md`: Directory tree with Git and file extension summary
 - `all_files_content.md`: File index and preview for all non-binary, non-excluded files
 
-If .gitignore does not exist, it is created. The folder INTERNAL_DOCS/ is always added to .gitignore (if not present), to help avoid committing generated documentation.
+If .gitignore does not exist, it is created. The folder `INTERNAL_DOCS/` is always added to .gitignore (if not present), to help avoid committing generated documentation.
 
 
 ## Configuration
