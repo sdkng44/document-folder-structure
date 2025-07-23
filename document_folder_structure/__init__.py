@@ -59,8 +59,8 @@ DEFAULTS = {
     "max_log_lines": 10,
     "max_preview_columns": 20
 }
- 
-# === SETUP LOGGING ===
+
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def add_line_numbers(lines, start=1):
@@ -75,12 +75,19 @@ def load_config_with_defaults(config_file, args):
     Load config file.
     """
     config = DEFAULTS.copy()
-    # Load config file
-    if os.path.exists(config_file):
-        with open(config_file, 'r') as f:
+    config_path = None
+    
+    if config_file and os.path.exists(config_file):
+        config_path = config_file
+    else:
+        repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        root_config = os.path.join(repo_root, "config.json")
+        if os.path.exists(root_config):
+            config_path = root_config
+    if config_path and os.path.exists(config_path):
+        with open(config_path, 'r') as f:
             file_config = json.load(f)
         config.update(file_config)
-    # Load args
     if getattr(args, "max_depth", None) is not None:
         config["max_depth"] = args.max_depth
     if getattr(args, "truncate_lines", None) is not None:
@@ -112,7 +119,6 @@ def read_n_lines_max_chars(filepath, config, max_lines=None, max_chars=None):
             for i, line in enumerate(fin):
                 if i >= max_lines or char_count >= max_chars:
                     break
-                # Only add up to remaining allowed characters for this line
                 remaining = max_chars - char_count
                 if len(line) > remaining:
                     lines.append(line[:remaining] + " ... [TRUNCATED]\n")
@@ -709,8 +715,7 @@ def generate_content_document(
         out.write("".join(out_lines))
 
 
-# ========== MAIN ==========
-if __name__ == "__main__":
+def main():
     parser = ArgumentParser(description="Generates directory tree and file content documentation in Markdown, with Git info, links, and special handling for binaries, logs, and truncated files.")
     parser.add_argument("directory", help="Project root directory.")
     parser.add_argument("--config", default="config.json", help="JSON configuration file.")

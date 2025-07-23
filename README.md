@@ -11,12 +11,11 @@ This script generates 2 files (**directory_tree.md** and **all_files_content.md*
 
 ## Documentation Example
 
-- [Markdown example of directory_tree.md file](/DOCUMENTATION_EXAMPLES/directory_tree.md)
-![Preview](/DOCUMENTATION_EXAMPLES/directory_tree.png)
+- [Markdown example of directory_tree.md file](https://github.com/sdkng44/document-folder-structure/blob/main/DOCUMENTATION_EXAMPLES/directory_tree.md)
+  ![Preview](https://raw.githubusercontent.com/sdkng44/document-folder-structure/main/DOCUMENTATION_EXAMPLES/directory_tree.png)
 
-
-- [Markdown example of all_files_content.md file](/DOCUMENTATION_EXAMPLES/all_files_content.md)
-![Preview](/DOCUMENTATION_EXAMPLES/all_files_content.png)
+- [Markdown example of all_files_content.md file](https://github.com/sdkng44/document-folder-structure/blob/main/DOCUMENTATION_EXAMPLES/all_files_content.md)
+  ![Preview](https://raw.githubusercontent.com/sdkng44/document-folder-structure/main/DOCUMENTATION_EXAMPLES/all_files_content.png)
 
 
 ## Requirements
