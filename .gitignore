@@ -2,3 +2,5 @@ __pycache__/
 INTERNAL_DOCS/
 docs/
 *.bak
+dist/
+*.egg-info/
