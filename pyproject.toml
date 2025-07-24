@@ -34,3 +34,8 @@ Repository = "https://github.com/sdkng44/document-folder-structure"
 
 [project.scripts]
 document-folder-structure = "document_folder_structure.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["document_folder_structure*"]
+exclude = ["DOCUMENTATION_EXAMPLES*"]
