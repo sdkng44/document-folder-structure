@@ -503,6 +503,7 @@ def print_tree_and_collect_files(
     max_depth = config.get('max_depth')
     files_list = []
     extensions_set = set()
+    dir_name = os.path.basename(os.path.abspath(directory))    
     tree = generate_tree_and_collect_files(
         directory, max_depth=max_depth, config=config,
         files_list=files_list, extensions_set=extensions_set,
@@ -515,6 +516,7 @@ def print_tree_and_collect_files(
     footer = markdown_tree_footer()
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(header)
+        f.write(f"{dir_name}/\n")
         for line in tree:
             f.write(line + "\n")
         f.write(footer)
